@@ -1,0 +1,27 @@
+{
+  "name": "hiredeskhr",
+  "version": "1.0.0",
+  "description": "HiredeskHR - Next-Gen Applicant Tracking System & Recruiter Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "free-ports": "node free-ports.js",
+    "predev": "node free-ports.js",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "backend": "npm run dev:backend",
+    "frontend": "npm run dev:frontend",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "npm run build --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test": "node test-e2e-suite.js",
+    "start": "node backend/dist/index.js",
+    "setup:otp": "node setup-otp.js",
+    "verify:otp": "node verify-otp-setup.js",
+    "tunnel": "C:\\Users\\shravani\\cloudflared.exe tunnel --url http://localhost:5174"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

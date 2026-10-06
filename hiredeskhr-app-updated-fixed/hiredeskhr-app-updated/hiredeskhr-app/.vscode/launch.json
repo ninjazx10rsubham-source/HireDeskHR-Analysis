@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run TalentFlow ATS (Full Stack)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}/hiredeskhr-app",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Debug Backend API",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:backend"],
+      "cwd": "${workspaceFolder}/hiredeskhr-app",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run Frontend Only",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:frontend"],
+      "cwd": "${workspaceFolder}/hiredeskhr-app",
+      "console": "integratedTerminal"
+    }
+  ]
+}

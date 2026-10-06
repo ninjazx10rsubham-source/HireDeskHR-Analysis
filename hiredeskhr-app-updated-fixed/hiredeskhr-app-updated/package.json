@@ -1,0 +1,17 @@
+{
+  "name": "hiredeskhr-intermediate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HireDeskHR Intermediate Proxy",
+  "scripts": {
+    "dev": "npm run dev --prefix hiredeskhr-app",
+    "dev:backend": "npm run dev:backend --prefix hiredeskhr-app",
+    "dev:frontend": "npm run dev:frontend --prefix hiredeskhr-app",
+    "build": "npm run build --prefix hiredeskhr-app",
+    "build:backend": "npm run build:backend --prefix hiredeskhr-app",
+    "build:frontend": "npm run build:frontend --prefix hiredeskhr-app",
+    "start": "npm run start --prefix hiredeskhr-app",
+    "free-ports": "npm run free-ports --prefix hiredeskhr-app",
+    "test": "node hiredeskhr-app/test-e2e-suite.js"
+  }
+}
